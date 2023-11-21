@@ -49,7 +49,18 @@ For detailed information on how to interact with the API, refer to the [API Docu
 
 ## Getting Started
 
-Follow the installation and usage instructions in the README to set up the project locally.
+To run the project locally, follow these steps:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/your-excel-upload-project.git
+2. **Navigate to the Project Directory:**
+    ```bash
+    cd your-excel-upload-project
+3. **Run the Application:**
+     ```bash
+     npm run dev
+4. **Explore the API EndPoints**
 
 ## Contributing
 
