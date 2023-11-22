@@ -6,6 +6,8 @@ const router = Router();
 
 router.post("/upload",myMulter(validationType.EXCEL).single("EXCEL"), HME, excelController.uploadExcel);
 
+router.get("/getData/:id", excelController.getDataById)
+
 router.put("/update/:id", excelController.updateExcel);
 
 router.delete("/delete/:id", excelController.deleteExcel);

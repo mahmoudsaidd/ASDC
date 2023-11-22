@@ -105,3 +105,16 @@ export const deleteExcel = asyncHandler(async (req, res, next) => {
     return res.json({ message: "Document deleted", deletedDocument });
 
 });
+
+
+
+export const getDataById = asyncHandler(async (req, res, next) => {
+    
+    const { id } = req.params;
+
+    // Find data in the database for the given ID
+    const data = await excelModel.find({ id });
+
+    // Return the data as the response
+    return res.send(data);
+});
